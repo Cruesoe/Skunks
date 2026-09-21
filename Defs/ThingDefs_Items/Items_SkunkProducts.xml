@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Matches vanilla implied Meat_Hare (small-animal meat), labeled for skunk. -->
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Meat_Skunk</defName>
+    <label>skunk meat</label>
+    <description>Raw flesh from a skunk. Edible, though some colonists swear it still smells faintly of musk.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Mass>0.03</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>-4</Beauty>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+
+  <!-- Cloned from Leather_Light (what hares use), tinted to skunk dark fur. -->
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_Skunk</defName>
+    <label>skunkskin</label>
+    <description>Lightweight leather harvested from a skunk. Dark and soft, with a faint lingering musk that never quite washes out.</description>
+    <graphicData>
+      <!-- Matches skunk body fur: deep warm charcoal-black -->
+      <color>(10,10,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(10,10,10)</color>
+      <commonality>0.2</commonality>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

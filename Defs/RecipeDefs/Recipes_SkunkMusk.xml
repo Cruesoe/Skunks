@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Instant cleanse with neutroamine -->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CleanseSkunkMuskNeutroamine</defName>
+    <label>cleanse skunk musk (neutroamine)</label>
+    <description>Dissolve lingering skunk musk with a dose of neutroamine. Removes the coating immediately.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Cleansing skunk musk with neutroamine.</jobString>
+    <workAmount>1500</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <removesHediff>SkunkStinkHediff</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has cleansed {1}'s skunk musk with neutroamine.</successfullyRemovedHediffMessage>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!-- Instant cleanse with chemfuel; may burn -->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CleanseSkunkMuskChemfuel</defName>
+    <label>cleanse skunk musk (chemfuel)</label>
+    <description>Scrub skunk musk off with chemfuel. Removes the coating immediately, but there is a chance of 2–4 burns on the body (never the head).</description>
+    <workerClass>Skunks.Recipe_RemoveSkunkMuskChemfuel</workerClass>
+    <jobString>Cleansing skunk musk with chemfuel.</jobString>
+    <workAmount>1500</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <removesHediff>SkunkStinkHediff</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has cleansed {1}'s skunk musk with chemfuel.</successfullyRemovedHediffMessage>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!-- Slow cleanse: herbal medicine over ~24 hours -->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CleanseSkunkMuskHerbal</defName>
+    <label>cleanse skunk musk (herbal medicine)</label>
+    <description>Treat skunk musk with herbal medicine. The coating then fades over about 24 hours instead of lasting up to 5 days.</description>
+    <workerClass>Skunks.Recipe_TreatSkunkMusk</workerClass>
+    <jobString>Treating skunk musk with herbal medicine.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineHerbal</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineHerbal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!-- Slow cleanse: milk over ~24 hours -->
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CleanseSkunkMuskMilk</defName>
+    <label>cleanse skunk musk (milk)</label>
+    <description>Wash skunk musk with milk. The coating then fades over about 24 hours instead of lasting up to 5 days.</description>
+    <workerClass>Skunks.Recipe_TreatSkunkMusk</workerClass>
+    <jobString>Washing skunk musk with milk.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Milk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>SkunkStinkThought</defName>
+    <thoughtClass>Skunks.Thought_Memory_SkunkStink</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>smells like skunk</label>
+        <description>The stench of skunk musk is stuck to me. It's completely disgusting and making me nauseous.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>smells like skunk</label>
+        <description>The stench of skunk musk is stuck to me. Thanks to smokeleaf, it's not so bad.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SkunkStinkNearby</defName>
+    <thoughtClass>Skunks.Thought_Memory_SkunkStink</thoughtClass>
+    <durationDays>0.01</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>smelly person nearby</label>
+        <description>Someone nearby reeks of skunk. It's hard to think about anything else.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>smelly person nearby</label>
+        <description>Someone nearby reeks of skunk. Thanks to smokeleaf, it only bothers me a little.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

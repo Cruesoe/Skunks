@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
+    <value>
+      <Skunk>0.7</Skunk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
+    <value>
+      <Skunk>0.7</Skunk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
+    <value>
+      <Skunk>0.7</Skunk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+    <value>
+      <Skunk>0.91</Skunk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Nature's Pretty Sweet (Continued)</li>
+      <li>Nature's Pretty Sweet</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/BiomeDef[defName="TKKN_RedwoodForest"]/wildAnimals</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="TKKN_RedwoodForest"]/wildAnimals</xpath>
+            <value>
+              <Skunk>0.7</Skunk>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>ReGrowth 2: Aspen</li>
+      <li>ReGrowth: Aspen</li>
+      <li>ReGrowth 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/BiomeDef[defName="RG_AspenForest"]/wildAnimals</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="RG_AspenForest"]/wildAnimals</xpath>
+            <value>
+              <Skunk>0.7</Skunk>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

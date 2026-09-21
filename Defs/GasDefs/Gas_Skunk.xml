@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Skunks_BaseGas" Abstract="True">
+    <thingClass>Gas</thingClass>
+    <label>gas</label>
+    <category>Gas</category>
+    <altitudeLayer>Gas</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Gas</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Skunks_BaseGas">
+    <defName>SkunkGas</defName>
+    <label>skunk musk cloud</label>
+    <description>A thick, yellowish haze of highly concentrated skunk musk. Standing in it leaves an unforgettable stench.</description>
+    <thingClass>Skunks.Gas_Skunk</thingClass>
+    <graphicData>
+      <texPath>Things/Gas/GasCloudThickA</texPath>
+      <drawSize>1.05</drawSize>
+      <color>(0.75, 0.85, 0.4, 0.45)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>1</min>
+        <max>2.5</max>
+      </expireSeconds>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+  </ThingDef>
+
+</Defs>

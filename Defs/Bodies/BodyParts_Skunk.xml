@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>Anus</defName>
+    <label>anus</label>
+    <hitPoints>8</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0.5</bleedRate>
+  </BodyPartDef>
+
+</Defs>

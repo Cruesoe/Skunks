@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>StinkGlands</defName>
+    <label>stink glands</label>
+    <description>Specialized anal glands that store and spray musk. They refill slowly over time.</description>
+    <hediffClass>Skunks.Hediff_StinkGlands</hediffClass>
+    <defaultLabelColor>(0.55, 0.7, 0.35)</defaultLabelColor>
+    <isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <tendable>false</tendable>
+    <stages>
+      <li>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

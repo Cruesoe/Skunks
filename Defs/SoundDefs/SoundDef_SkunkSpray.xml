@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Skunk_Spray</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>4</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Skunk_spray</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35~45</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>10~32</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
