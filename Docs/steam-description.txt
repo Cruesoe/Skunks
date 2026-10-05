@@ -1,0 +1,17 @@
+This is a continued version of the original mod by GuppyFacesAreCute. It will be removed from the workshop if the original author requests it.
+
+
+[h2]Original Text[/h2]
+
+Adds wild skunks to the rim — small, smelly, and ready to ruin someone's day.
+
+Wild skunks show up in temperate forests, temperate swamps, boreal forests, and arid shrublands. They also spawn in Nature's Pretty Sweet redwood forests and ReGrowth aspen forests when those mods are loaded. They're common trade animals: small omnivores that aren't trainable and make poor pets. Butcher them for regular small-animal meat and dark skunkskin leather.
+
+Hurt a skunk up close and it turns around and sprays a narrow jet of musk at whoever hit it. Predators leave them alone — animals know better than to mess with a skunk. Each skunk has 5 sprays with a short cooldown between them, and those charges refill over about 3 days. Destroying its anus or stink glands stops it from spraying for good. While it still has sprays left, it runs away. Once it's empty, it stops fleeing and will fight back. Ranged attacks won't make it spray, but they will still scare it off.
+
+Anyone standing in the musk cloud gets covered in skunk musk for about 5 days. That gives −8 mood, and anyone within 3 tiles of them gets −6 mood. Spend an hour outside and it wears off 10% faster until you go indoors; spend an hour indoors and it wears off 10% slower until you go outside. Colonists hooked on smokeleaf only take half those mood hits. Full toxic-environment resistance blocks the coating and clears it faster if you already have it. Animals caught in the spray get stunned for 3 seconds. Skunks are immune to their own musk.
+
+You can clean the musk off with medical operations:
+- Neutroamine (1): removes it instantly
+- Chemfuel (1): removes it instantly, but has a 50% chance to cause 2–4 burns (never on the head)
+- Herbal medicine (5) or milk (5): clears it over about 24 hours
